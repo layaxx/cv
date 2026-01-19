@@ -22,7 +22,7 @@
     "**/*.synctex*": true,
     "**/*__latexindent*": true
   },
-  "editor.minimap.autohide": true,
+  "editor.minimap.autohide": "mouseover",
   "editor.minimap.enabled": false,
   "latex-workshop.linting.run": "onType",
   "latex-workshop.texcount.autorun": "onSave"
