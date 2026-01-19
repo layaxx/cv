@@ -94,7 +94,7 @@
 % Command to vertically centre adjacent content
 \newcommand{\vcenteredhbox}[1]{% The only parameter is for the content to centre
 	\begingroup%
-		\setbox0=\hbox{#1}\parbox{\wd0}{\box0}%
+	\setbox0=\hbox{#1}\parbox{\wd0}{\box0}%
 	\endgroup%
 }
 
@@ -122,13 +122,13 @@
 % Environment to hold a new list of entries
 \newenvironment{entrylist}{
 	\begin{longtable}[H]{l l}
-}{
+		}{
 	\end{longtable}
 }
 
 \newcommand{\entry}[4]{% First argument for the leftmost date(s) text, second is for the bold entry heading, third is for the bold right-aligned entry qualifier and the fourth is for the entry description
 	\parbox[t]{0.15\textwidth}{% 17.5% of the text width of the page
-	   \small #1 % Leftmost entry date(s) text
+		\small #1 % Leftmost entry date(s) text
 	}%
 	&\parbox[t]{0.85\textwidth}{% 82.5% of the text width of the page
 		\textbf{#2}% Entry heading text
