@@ -1,0 +1,209 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Class
+% Version 2.0 (12/10/23)
+%
+% This class originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Omar Roldan
+% Based on a template by  Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+\usepackage{multicol}
+\setlength{\columnsep}{0mm}
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	{ \fontsize{16}{20} \textcolor{black}{\textbf{\MakeUppercase{Yannick Lang}}}} % First name
+
+	\vspace{6pt}
+
+	{\Large M.Sc. Angewandte Informatik} % Career or current job title
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.2\textwidth} % 20% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	\icon{Globe}{11}{\href{https://y-lang.eu}{y-lang.eu}}\\
+	\icon{Mobile}{11}{0151 70008124}\\
+	\icon{MapMarker}{11}{Bamberg, DE}\\
+
+\end{minipage}
+\begin{minipage}[t]{0.27\textwidth} % 27% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\icon{Envelope}{11}{\href{mailto:mail@y-lang.eu}{mail@y-lang.eu}}\\
+	\icon{Github}{11}{\href{https://github.com/layaxx}{github.com/layaxx}}\\
+	\icon{LinkedinSquare}{11}{\href{https://www.linkedin.com/in/y-lang/}{/in/y-lang}}\\
+
+\end{minipage}
+
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.46\textwidth}
+	\cvsect{Übersicht}
+	\vspace{-6pt}
+
+
+	Master-Absolvent der Angewandten Informatik mit Fokus auf Full-Stack-Webentwicklung (Next.js, Python) und Machine Learning. Erfahrung in der Leitung von IT-Teams, Serveradministration und der Implementierung moderner Softwarelösungen im Unternehmens- und Vereinskontext.
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.465\textwidth}
+	\cvsect{Skills}
+	\vspace{-6pt}
+
+	\begin{minipage}[t]{0.28\textwidth}
+		\textbf{Languages:}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.71\textwidth}
+		Javascript/Typescript, Python, Java, SQL, R, C++, C.
+	\end{minipage}
+	\vspace{3mm}
+
+	\begin{minipage}[t]{0.28\textwidth}
+		\textbf{Technologies:}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.71\textwidth}
+		React, Next.js, Docker, CI/CD, PyTorch.
+	\end{minipage}
+	\vspace{-1mm}
+
+	\begin{minipage}[t]{0.28\textwidth}
+		\textbf{Principles:}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.71\textwidth}
+		Clean Code, Test-Driven Development, Code Reviews, Git best practices.
+	\end{minipage}
+
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+\cvsect{Erfahrung}
+\begin{entrylist}
+	\entry
+	{seit 9/2024}
+	{Webentwickler (Teilzeit)}
+	{LivingLogic AG}
+	{\vspace{-10pt}
+		\begin{itemize}[noitemsep,topsep=1pt,parsep=1pt,partopsep=0pt, leftmargin=-1pt]
+			\item Webentwicklung im Kontext der Low-Code-Plattform LivingApps
+			\item Entwicklung neuer Features in bestehenden Applikationen durch Frontend- und Backend-Anpassungen
+			\item Integration von Large Language Models zur Unterstützung von Anwendern
+		\end{itemize}
+		\texttt{Javascript} \slashsep \texttt{Python} \slashsep \texttt{LLMs}}
+	\entry
+	{seit 9/2021}
+	{IT Vorstand (ehrenamtlich)}
+	{Feki.de e.V.}
+	{\vspace{-10pt}
+		\begin{itemize}[noitemsep,topsep=1pt,parsep=1pt,partopsep=0pt, leftmargin=-1pt]
+			\item Betreuung und Weiterentwicklung der Vereinswebsite (\href{https://feki.de}{feki.de}, PHP-basiert, > 10.000 Besucher/Monat)
+			\item Entwicklung der neuen Plattform (\href{https://new.feki.de}{new.feki.de}, Next.js + Strapi CMS)
+			\item Leitung des vereinsinternen IT-Teams, zeitweise auch des offiziellen UniShops
+			\item Serveradministration (u.a. Nextcloud, Gitlab, Mattermost, E-Mail-Server, auf zwei physischen Servern)
+		\end{itemize}
+		\texttt{Docker} \slashsep \texttt{CI/CD} \slashsep \texttt{Serveradministration} \slashsep \texttt{Next.js}}
+	\entry
+	{10/2019 -- 3/2023}
+	{Studentische Hilfskraft (Übungsleiter)}
+	{Lehrstuhl Praktische Informatik}
+	{\vspace{-10pt}
+		\begin{itemize}[noitemsep,topsep=1pt,parsep=1pt,partopsep=0pt, leftmargin=-1pt]
+			\item Leitung von Übungsgruppen, teilweise auch Aufgabenkorrektur in den Kursen:
+			\item Einführung in die Informatik: Algorithmen, Programmierung und Softwaretechnik (DSG-EiAPS-B)
+			\item Java-Programmierung (DSG-JaP-B)
+			\item Fortgeschrittene Java-Programmierung (DSG-AJP-B)
+		\end{itemize}
+		\texttt{C} \slashsep \texttt{Java} \slashsep \texttt{Formale Sprachen}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Bildung}
+\begin{entrylist}
+	\entry
+	{4/2023 -- 1/2026}
+	{M. Sc. Angewandte Informatik}
+	{Otto-Friedrich-Universität Bamberg}
+	{Abschlussnote: Voraussichtlich 1,x (Bewertung der Masterarbeit ausstehend)}
+	\entry
+	{10/2019 -- 3/2023}
+	{B. Sc. Angewandte Informatik}
+	{Otto-Friedrich-Universität Bamberg}
+	{Abschlussnote: 1,6 | Anwendungsgebiet: Statistik}
+	\entry
+	{9/2011 -- 6/2019}
+	{Allgemeine Hochschulreife}
+	{Gymnasium Münchberg}
+	{Abschlussnote: 1,4}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Projekte}
+\begin{entrylist}
+	\entry
+	{Masterarbeit}
+	{Automatic Induction of Regular Constraints for a\\ Task-General Relation Extraction System}
+	{\href{https://github.com/layaxx/masters-thesis}{github.com/layaxx/masters-thesis}}
+	{Entwicklung eines Systems zur automatischen Induktion globaler Constraints, um die strukturelle Korrektheit in Sequenzmodellen zu erzwingen.\\
+		\texttt{Python} \slashsep \texttt{Formale Sprachen} \slashsep \texttt{Transformer-Modelle}}
+	\entry
+	{Webanwendung}
+	{Inventarverwaltungssystem für UniShop Bamberg}
+	{\href{https://github.com/layaxx/unishop-inventory}{github.com/layaxx/unishop-inventory}}
+	{Während meiner Leitungstätigkeit im offiziellen UniShop der Otto-Friedrich-Universität Bamberg entwickelt, unter anderem um PDF-Berichte über aktuelle Warenbestände zu generieren.\\
+		\texttt{Next.js} \slashsep \texttt{TypeScript} \slashsep \texttt{LaTeX}}
+	\entry
+	{Webanwendung}
+	{RSS-Feed Aggregator (Dashboard)}
+	{\href{https://github.com/layaxx/dashboard}{github.com/layaxx/dashboard}}
+	{Persönliches Dashboard zur Aggregation von RSS-Feeds und weiterer Hilfsprogramme.\\
+		\texttt{Next.js} \slashsep \texttt{TypeScript} \slashsep \texttt{PostgreSQL}}
+\end{entrylist}
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Sprachen}
+\vspace{-6pt}
+
+\hspace{26mm} \textbf{Englisch} - fließend, \textbf{ Deutsch} - Muttersprache
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
